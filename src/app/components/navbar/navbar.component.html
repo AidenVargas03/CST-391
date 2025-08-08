@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">PC Parts Manager</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <!-- Home -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+            Home
+          </a>
+        </li>
+
+        <!-- PCs Section -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="pcsDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            PCs
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="pcsDropdown">
+            <li><a class="dropdown-item" routerLink="/pcs" routerLinkActive="active">List PCs</a></li>
+            <li><a class="dropdown-item" routerLink="/pcs/create" routerLinkActive="active">Add PC</a></li>
+          </ul>
+        </li>
+
+        <!-- Parts Section -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="partsDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Parts
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="partsDropdown">
+            <li><a class="dropdown-item" routerLink="/parts" routerLinkActive="active">List Parts</a></li>
+            <li><a class="dropdown-item" routerLink="/parts/add" routerLinkActive="active">Add Part</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>

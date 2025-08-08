@@ -1,0 +1,10 @@
+<div class="container mt-3">
+  <h2>Edit Part</h2>
+  <form (ngSubmit)="update()">
+    <input class="form-control mb-2" [(ngModel)]="part.name" name="name" placeholder="Name" required />
+    <input class="form-control mb-2" [(ngModel)]="part.type" name="type" placeholder="Type" required />
+    <input class="form-control mb-2" type="number" [(ngModel)]="part.price" name="price" placeholder="Price" required />
+    <input class="form-control mb-2" type="number" [(ngModel)]="part.quantity" name="quantity" placeholder="Quantity" required />
+    <button class="btn btn-primary" type="submit">Save</button>
+  </form>
+</div>

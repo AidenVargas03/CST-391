@@ -1,0 +1,56 @@
+/* Navbar background gradient for a fresh look */
+.navbar {
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Brand styling */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #f5f5f5 !important;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* Navbar links */
+.nav-link {
+  color: #d1d9ff !important;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active, .dropdown-item.active {
+  color: #ffcc00 !important; /* Gold-ish highlight */
+  background-color: transparent !important;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  background-color: #2a3b6a;
+  border-radius: 0;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.dropdown-item {
+  color: #d1d9ff;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #ffcc00;
+  color: #182848;
+}
+
+/* Toggler button (hamburger) */
+.navbar-toggler {
+  border-color: #ffcc00;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' " +
+  "xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,204,0, 1%29' " +
+  "stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
